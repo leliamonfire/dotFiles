@@ -1,54 +1,40 @@
-#!/bin/bash
-iatest=$(expr index "$-" i)
+# .bashrc
 
-#######################################################
-# SOURCED ALIAS'S AND SCRIPTS BY zachbrowne.me
-#######################################################
+# exec fish
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	 . /etc/bashrc
+    . /etc/bashrc
 fi
 
-# Enable bash programmable completion features in interactive shells
-if [ -f /usr/share/bash-completion/bash_completion ]; then
-	. /usr/share/bash-completion/bash_completion
-elif [ -f /etc/bash_completion ]; then
-	. /etc/bash_completion
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
+export PATH
 
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
+unset rc
 
-# Install Starship - curl -sS https://starship.rs/install.sh | sh
-
+# starship
 eval "$(starship init bash)"
-
-# KITTY - alias to be able to use kitty features when connecting to remote servers(e.g use tmux on remote server)
 
 alias kssh="kitty +kitten ssh"
 alias up="sudo dnf update --refresh"
 alias gl="kssh jlekhra1@gl.umbc.edu"
 alias ff="fastfetch"
+#alias code="codium"
 
+export PATH=$PATH:~/.cargo/bin/
 
-# added cause its lowkey funny (motd sortof but i have to manually set it everytime unitl i figure out how to do it otherwise)
-# toilet i like men
- cowsay -y hello
-# fastfetch
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/jlekhram/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/jlekhram/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/jlekhram/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/jlekhram/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-export PATH=$PATH:/home/jlekhram/.spicetify
-export PATH=/home/jlekhram/.cargo/bin:$PATH
-export PATH=/home/jlekhram/.local/bin:$PATH
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+. "$HOME/.cargo/env"

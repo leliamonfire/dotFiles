@@ -1,0 +1,49 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+
+  "logo": {
+    "type": "auto",
+    "source": "~/.config/fastfetch/cat_ascii.txt",
+    "height": 5,
+    "width": 15,
+  },
+  "modules": [
+    "title",
+    // "break",
+    {
+      "type": "custom",
+      "format": "┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓",
+    },
+    "break",
+    "host",
+    "os",
+    "kernel",
+    "packages",
+    "shell",
+    "terminal",
+    //    "break",
+    //  {
+    //  "type": "custom",
+    //  "format": "┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫"
+    // },
+    // "break",
+    "wm",
+    "de",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    //"separator",
+    //"break",
+    //"colors",
+    "break",
+    {
+      "type": "custom",
+      "format": "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛",
+    },
+    {
+      "type": "custom",
+      "format": " {#30}⬤ {#90}⬤ {#31}⬤ {#91}⬤ {#32}⬤ {#92}⬤ {#33}⬤ {#93}⬤ {#34}⬤ {#94}⬤ {#35}⬤ {#95}⬤ {#36}⬤ {#96}⬤ {#37}⬤ {#97}⬤ ",
+    },
+  ],
+}
