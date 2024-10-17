@@ -27,7 +27,6 @@ data_format = ascii
 ascii_max_range = 7
 channels = mono
 mono_option = average
-reverse = 1
 EOF
 
 pkill -f "cava -p $config_file"
