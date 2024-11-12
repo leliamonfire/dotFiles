@@ -18,23 +18,24 @@
 * {
     transition: none;
     box-shadow: none;
+    font-size: 16px;
+    font-weight: 400;
+    min-height: 0;
 }
 
 #waybar {
-    font-family: "JetBrains Mono", sans-serif;
-    font-size: 1.2em;
-    font-weight: 400;
+    font-family: "BlexMono Nerd Font", sans-serif;
+
     color: @base04;
-    background: @base01;
-    opacity: 0.9;
+    background: transparent;
 }
 
 #workspaces {
-    margin: 0 4px;
+    margin: 0 2px;
 }
 
 #workspaces button {
-    margin: 4px 0;
+    margin: 1px 0;
     padding: 0 4px;
     color: @base05;
 }
@@ -81,7 +82,7 @@
 #clock,
 #temperature,
 #language {
-    margin: 4px 2px;
+    margin: 2px 1px;
     padding: 0 6px;
     background-color: @base02;
     border-radius: 4px;
@@ -97,9 +98,11 @@
 }
 
 #clock {
-    margin-left: 0px;
+    /*
+    margin-left: 4px;
     margin-right: 4px;
-    background-color: transparent;
+    */
+    background-color: @base02;
 }
 
 #temperature.critical {
