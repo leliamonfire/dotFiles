@@ -16,5 +16,12 @@
 
   "modules-center": ["clock"],
 
-  "modules-right": ["cpu", "temperature", "memory", "pulseaudio", "battery"],
+  "modules-right": [
+    "cpu",
+    "temperature",
+    "memory",
+    "pulseaudio",
+    "tray",
+    "battery",
+  ],
 }

@@ -81,6 +81,7 @@
     "format-paused": " {title} {status_icon} ",
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl next",
+    "on-click-middle": "playerctl previous",
     "scroll-step": 5.0,
     "smooth-scrolling-threshold": 1,
     "status-icons": {
@@ -155,6 +156,11 @@
     "format-full": "{icon} Full",
     "format-alt": "{icon} {time}",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰁹"],
+  },
+
+  "tray": {
+    "icon-size": 18,
+    //"spacing": 10
   },
 
   "custom/cava": {
