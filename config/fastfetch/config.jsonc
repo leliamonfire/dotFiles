@@ -19,6 +19,8 @@
     "os",
     "kernel",
     "packages",
+    "wm",
+    "de",
     "shell",
     "terminal",
     //    "break",
@@ -27,8 +29,6 @@
     //  "format": "┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┫"
     // },
     // "break",
-    "wm",
-    "de",
     "cpu",
     "gpu",
     "memory",
