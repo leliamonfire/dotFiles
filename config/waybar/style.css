@@ -27,7 +27,9 @@
     font-family: "BlexMono Nerd Font", sans-serif;
 
     color: @base04;
-    background: transparent;
+
+    background: content-box
+        radial-gradient(rgba(220, 20, 60, 0.9), rgba(135, 206, 235, 0.9));
 }
 
 #workspaces {
