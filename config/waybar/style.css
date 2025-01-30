@@ -16,6 +16,7 @@
 @define-color base0F #a16946;
 
 * {
+    font-family: "BlexMono Nerd Font";
     transition: none;
     box-shadow: none;
     font-size: 16px;
@@ -24,12 +25,9 @@
 }
 
 #waybar {
-    font-family: "BlexMono Nerd Font", sans-serif;
-
     color: @base04;
 
-    background: content-box
-        radial-gradient(rgba(220, 20, 60, 0.9), rgba(135, 206, 235, 0.9));
+    background: rgba(82, 78, 78, 0.1);
 }
 
 #workspaces {
@@ -69,6 +67,7 @@
     border-left: none;
 }
 
+#mpris,
 #mode,
 #battery,
 #cpu,
@@ -111,14 +110,18 @@
     color: @base0F;
 }
 
+/*
 #window {
     font-size: 0.9em;
     font-weight: 400;
     font-family: sans-serif;
 }
+*/
 
+/*
 #language {
     font-size: 0.9em;
     font-weight: 500;
     letter-spacing: -1px;
 }
+*/
