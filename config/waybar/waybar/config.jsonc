@@ -1,0 +1,27 @@
+{
+  "include": "~/.config/waybar/modules.jsonc",
+  "layer": "top",
+  "exclusive": true,
+  "passthrough": false,
+  "position": "top",
+  "spacing": 1,
+  "fixed-center": true,
+  "ipc": true,
+  "margin-top": 0,
+  "margin-left": 0,
+  "margin-right": 0,
+  "margin-bottom": 0,
+  "font-1": "polycat",
+
+  "modules-left": ["hyprland/workspaces", "mpris", "custom/cava"],
+
+  "modules-center": ["clock"],
+
+  "modules-right": [
+    "custom/polycat",
+    "memory",
+    "pulseaudio",
+    "tray",
+    "battery",
+  ],
+}
