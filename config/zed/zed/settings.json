@@ -7,9 +7,13 @@
 // custom settings, run the `zed: Open Default Settings` command
 // from the command palette
 {
+  "agent_ui_font_size": 16.0,
+  "agent_buffer_font_size": 12.0,
+  "ui_font_family": ".ZedSans",
+  "buffer_font_weight": 500.0,
   "ui_font_size": 16,
-  "buffer_font_size": 14.0,
-  "buffer_font_family": "BlexMono Nerd Font",
+  "buffer_font_size": 18.0,
+  "buffer_font_family": "AnonymicePro Nerd Font Mono",
   "theme": {
     "mode": "dark",
     "light": "0x96f Theme",

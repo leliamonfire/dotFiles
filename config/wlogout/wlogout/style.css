@@ -1,0 +1,80 @@
+window {
+    font-family: Minecraft;
+    font-size: 14pt;
+    color: #f7f3ea;
+    background-color: rgba(18, 20, 20, 0.9);
+    opacity: 0.4;
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px;
+    border: 2px solid #a9b665;
+    border-radius: 0px;
+    background-color: #111314;
+    margin: 2.5px;
+}
+
+button:hover {
+    border: 2px solid #a9b665;
+    border-radius: 0px;
+    background-color: #111314;
+    color: #f7f3ea;
+}
+
+button:active {
+    border-radius: 0px;
+    border: 2px solid #a9b665;
+    background-color: #111314;
+    color: #f7f3ea;
+}
+
+button:focus {
+    border-radius: 0px;
+    border: 2px solid #a9b665;
+    background-color: #111314;
+    color: #f7f3ea;
+}
+
+#lock {
+    background-image: image(
+        url("/usr/share/wlogout/icons/lock.png"),
+        url("/usr/local/share/wlogout/icons/lock.png")
+    );
+}
+
+#logout {
+    background-image: image(
+        url("/usr/share/wlogout/icons/logout.png"),
+        url("/usr/local/share/wlogout/icons/logout.png")
+    );
+}
+
+#suspend {
+    background-image: image(
+        url("/usr/share/wlogout/icons/suspend.png"),
+        url("/usr/local/share/wlogout/icons/suspend.png")
+    );
+}
+
+#hibernate {
+    background-image: image(
+        url("/usr/share/wlogout/icons/hibernate.png"),
+        url("/usr/local/share/wlogout/icons/hibernate.png")
+    );
+}
+
+#shutdown {
+    background-image: image(
+        url("/usr/share/wlogout/icons/shutdown.png"),
+        url("/usr/local/share/wlogout/icons/shutdown.png")
+    );
+}
+
+#reboot {
+    background-image: image(
+        url("/usr/share/wlogout/icons/reboot.png"),
+        url("/usr/local/share/wlogout/icons/reboot.png")
+    );
+}

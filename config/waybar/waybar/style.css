@@ -56,6 +56,25 @@
     color: rgba(238, 46, 36, 1);
 }
 
+#tags {
+    margin: 0 2px;
+}
+
+#tags button {
+    margin: 0 1px;
+    padding: 0 2px;
+    color: @base05;
+}
+
+#tags button.active {
+    border-radius: 4px;
+    background-color: @base02;
+}
+
+#tags button.urgent {
+    color: rgba(238, 46, 36, 1);
+}
+
 #tray {
     margin: 1px;
     padding: 0 2px;
